@@ -1,0 +1,769 @@
+@import "zen";
+@import "zen/background";
+@import "compass";
+@import "sassy-buttons";
+@import "animate";
+
+$zen-gutter-width: 40px;
+
+$zen-column-count: 12;
+
+
+
+//Color
+$a: #333;
+$b:rgb(115, 9, 0);
+$c:#f26d2e;
+$d:#730900;
+
+//Padding
+$pt:40px;
+
+//Height
+$ht:100px;
+
+//Font Size
+$fs:1.2em;
+
+body{
+ //background-color: #f26d2e;
+background:url("/kwealth/sites/default/files/bg.png");
+}
+#page{
+  padding: 0;
+   @include zen-grid-container;
+   @include single-box-shadow(#333, -1px, 0px, 26px, -1px);
+   max-width: 75.11805%;
+}
+#header_top{
+  height:$ht - 27;
+  background-color: $a;
+  @include zen-grid-container;
+}
+#header{
+  background: url("/kwealth/sites/default/files/header.png");
+  height:$ht + 251;
+  padding: $pt 0 0 0;
+  text-align: center;
+}
+#logo{
+    @include zen-grid-item(8, 3);
+     @include zen-clear(both);
+}
+#name-and-slogan{
+  @include zen-grid-item(8, 3);
+  @include zen-clear(both);
+  #site-name{
+      width: 100%;
+
+      a{
+        color: #CC6227;
+          font-family: 'Kaushan Script', sans-serif;
+          font-size: 0.875em;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+  }
+}
+img[alt^=Banner]{
+  padding: $pt - 10 0;
+}
+.home_front #main{
+  padding-top: 0;
+}
+#content{
+  padding: 0;
+
+}
+.pane-content-top{
+  background: url("/kwealth/sites/default/files/content-top-bg.png");
+    @include zen-grid-container;
+    padding-top: $pt + 50;
+}
+#mini-panel-content_top .pane-block-1 {
+  @include zen-grid-item(8, 3);
+    @include zen-clear();
+  p{
+  font-size: 1.71789em;
+  color:$b;
+  text-align: center;
+  margin-top: -8px;
+  }
+}
+.pane-widgets{
+  @include zen-grid-item(8, 3);
+  @include zen-clear();
+  .pane-title, .pane-content{
+    display: inline-block;
+  }
+}
+.node-15{
+    @include zen-grid-item(10, 2);
+    padding: 0 $pt + 4 0 $pt + 4;
+ p{
+  font-size: $fs - 0.2;
+  text-align: justify;
+  font-family: 'Droid Sans';
+  }
+}
+.pane-content-bottom, #main{
+  background: url("/kwealth/sites/default/files/content-bottom-bg.png");
+}
+.home_front .panel-2col .panel-col-first{
+     @include zen-grid-item(4, 3);
+     width:33.3333%;
+     padding-top: $pt;
+}
+#mini-panel-content_bottom{
+}
+.home_front .panel-2col .panel-col-last{
+     @include zen-grid-item(4, 7);
+     width:33.3333%;
+     padding-top: $pt;
+}
+.home_front .panel-col-first .pane-content{
+  text-align: center;
+  color:$c;
+  font-size:$fs +  0.3em;
+  font-family: 'Droid Sans'; font-weight: 700;
+}
+.home_front .panel-col-last .pane-content{
+  text-align: center;
+  color:$c;
+  font-size:$fs +  0.3em;
+  font-family: 'Droid Sans'; font-weight: 700;
+}
+#footer{
+  background: url("/kwealth/sites/default/files/footer.png");
+  height:$ht + 124;
+}
+//Navigation
+
+.nav_all, .region-header-top #block-block-2{
+  //display: inline-block;
+  }
+.nav_all{
+   @include zen-grid-item(7, 2, left);
+}
+.region-header-top #block-block-2{
+   @include zen-grid-item(2, 9);
+   padding: 14px 0;
+}
+.join{
+  @include sassy-button("matte", 5px, 16px, #fce8b3, #f5cf6a, #fff, "false");
+  a{
+    text-decoration: none;
+    font-size: 0.87em;
+  }
+}
+
+.lines{
+ color: rgba(238, 238, 238, 0.55);
+}
+.contact_form_all {
+  h1.title{
+  @include zen-grid-item(4, 5);
+  background-color: rgb(134, 76, 13);
+  color: #fff;
+  text-align: center;
+  }
+  .panel-1col{
+  @include zen-grid-item(8, 3);
+  margin-top: 40px;
+  }
+  .pane-block-3{
+      margin-top: 40px;
+     margin-bottom:30px;
+     p{
+         font-family: 'Droid Sans';
+     }
+     .cd1{
+       text-align: center;
+     }
+     .cd2{
+       padding:0 20px;
+       img{
+         padding: 0 70px;
+       }
+     }
+     }
+     }
+     .panel-col-last{
+     h1{
+       text-align: center;
+     }
+}
+
+
+.nav_all .sf-menu li{
+  width: 20%;
+text-align: center;
+line-height: 72px;
+
+&.active-trail a{
+  //width: 18.4%;
+  //height: 110px;
+  color:#fff;
+  text-align: center;
+  line-height: 72px;
+  text-decoration: none;
+  }
+  a:hover{
+    text-decoration: none;
+    }
+a{
+  @include link-colors($normal:#f26d2e, $hover:#f5cf6a, $active:#fff);
+  text-decoration: none;
+}
+}
+#content .tabs {
+padding: 40px 26% 0 26%;
+}
+.password-field, .password-confirm{
+ width: 95.8% !important;
+}
+.password-strength {
+  position: relative;
+  right: 4.2%;
+}
+.js h2{
+  opacity:1;
+  font-size: 1em;
+}
+.pane-menu-menu-account-settings .pane-content{
+text-align: left;
+font-size: 1em;
+}
+
+.nav_side .sf-menu a, .nav_side .menuparent{
+  height:40px;
+  background-color: #730900;
+  text-decoration: none;
+  width: 192px;
+  text-align: center;
+  color:#fff;
+  line-height: 40px;
+}
+.nav_side .sf-menu a:hover, .nav_side .menuparent:hover{
+  background-color: $c;
+  text-decoration: none;
+  text-align: center;
+}
+
+#login-message::before{
+  content:url(http://localhost:8888/kwealth/sites/default/files/login.png);
+  }
+div.messages{
+@include zen-grid-item(8, 3);
+background-color: none;
+color:green;
+border: 1px solid rgb(11, 52, 139);
+text-align: center;
+@include translateY(-130px);
+}
+.page-user-password {
+#content {
+   @include zen-grid-item(8, 3);
+}
+.title{
+  font-size: 1.7em;
+   @include zen-grid-item(8, 3);
+   padding: 40px 0 40px 0;
+}
+.title::before{
+  content:url(http://localhost:8888/kwealth/sites/default/files/unlockme.png);
+}
+}
+.page-user-edit{
+#content{
+  @include zen-grid-item(8, 3);
+  margin-top:80px;
+  margin-bottom: 40px;
+  background-color: #f4f4f4;
+  border-radius: 15px 15px 0 0;
+  padding: 2% 4% 0 4%;
+  border: 1px solid #B1A05A;
+  label{
+    color:$c;
+  }
+}
+h1.title{
+  display: none;
+}
+}
+#view_me{
+    @include zen-grid-item(8, 3);
+    margin-top: 80px;
+    margin-bottom: 40px;
+background-color: #f4f4f4;
+border: 1px solid #B1A05A;
+border-radius: 10px;
+h2{
+  color:$c;
+}
+.pane-content{
+  color:$d;
+}
+}
+input[type="submit"]{
+ @include sassy-button("matte", 5px, 19px, rgb(243, 151, 108), rgb(242, 109, 46), #fff, "inset");
+ font-size:1em;
+}
+ul.primary li{
+
+}
+ul.primary a:link{
+
+}
+.page-user ul.primary a.active{
+  background-color:transparent;
+  color:#000;
+}
+label{
+  color:#730900;
+}
+.toboggan-unified {
+  #login-message{
+    margin-top: -40px;
+  }
+#login-links {
+font-size: 1.3em;
+margin-top: 17px;
+color: #f26d2e;
+}
+}
+#view_me .panel-pane{
+ border-bottom: 1px solid #D6D5D3;
+}
+ul.primary{
+  border-bottom: 1px solid #D5BB7E;
+}
+.node-18{
+  @include zen-grid-item(10, 2);
+  background-color: #f0f0f0;
+  margin-top: 48px;
+  margin-bottom: 40px;
+  line-height: 2em;
+  border-radius: 10px 10px 0 0;
+  color:$d;
+  p {
+    strong{
+    color:$c;
+  }
+  img{
+    float: left;
+    margin-right: 10px;
+  }
+}
+}
+.node-27 {
+  p{
+    text-align: center;
+  }
+.field-forms- {
+background-color: #fff;
+margin: 10px 0 30px 0;
+padding: 10px 0 10px 20px;
+border: 1px solid #E2E1CA;
+a{
+  color:$c;
+  font-family: 'Droid Sans';
+  font-weight: bold;
+}
+}
+}
+.page-node-27 {
+  p, li, ol{
+    font-family: 'Droid Sans';
+  }
+h1{
+  @include zen-grid-item(8, 3);
+  text-align: center;
+  color:$d;
+   font-family: 'Droid Sans'; font-weight: 700;
+}
+}
+.page-node-18 h1{
+   @include zen-grid-item(3, 2);
+color:$d;
+}
+.node-22, .node-23, .node-24, .node-25, .node-26, .node-27{
+  @include zen-grid-item(8, 3);
+  line-height: 2em;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 10px 10px 0 0;
+    border: 1px solid #B1A05A;
+  background-color: #f0f0f0;
+  color:$d;
+}
+.page-user-summary-guidelines h1, .page-user-loan h1, .page-user-membership h1{
+   @include zen-grid-item(8, 3);
+    @include zen-clear();
+    color:$c;
+}
+ul.primary{
+   @include zen-grid-item(10, 2);
+}
+.page-user h1{
+   @include zen-grid-item(8, 3);
+  @include zen-clear();
+  text-align: center;
+  color:$c;
+}
+
+.page-user-loan h1, .page-user-summary-guidelines h1{
+  text-align: center;
+  color:$c;
+  //margin-top: 89px;
+//margin-bottom: 40px;
+
+}
+#content{
+    //@include zen-grid-background();
+}
+ul.secondary{
+  @include zen-grid-item(8, 3);
+  border:none;
+  margin-top: 3.5em;
+}
+.contact_form_all .title, .join a, .page-user-summary-guidelines .title,
+.page-node-18 h1, input[type="submit"], #view_me h2, .page-user-edit h1.title,
+.page-user-loan h1, .page-user h1, .view-contributions thead tr th{
+  font-family: 'Droid Sans'; font-weight: 700;
+}
+.node-22 .field-body p, .node-18 .field-body p, .contact_form_all
+.panel-col-first, .description, .login-forgot, legend, .password-strength,
+.form-text, .form-textarea, .breadcrumb, .toboggan-unified #login-links a,
+#view_me .pane-content, ul.primary li a, #secondary-menu li a, .node-23,
+.page-user .messages h2, .view-contributions tr.even td, .node-24 li,
+.node-25 li, .view-contributions tr.odd td{
+  font-family: 'Droid Sans';
+}
+
+//Form
+
+#edit-current-pass, #edit-pass-pass1,
+#edit-pass-pass2, #edit-timezone--2, #edit-picture-upload, #edit-name,
+ #edit-subject, #edit-message, #edti-mail{
+  max-width: 100%;
+}
+#edit-mail, #edit-current-pass, #edit-pass-pass1, #edit-pass-pass2,
+#edit-subject, #edit-name, #edit-name--2, #edit-conf-mail,
+#edit-profile-main-field-first-name-und-0-value,
+#edit-profile-main-field-last-name-und-0-value,
+#edit-profile-main-field-date-of-birth-und-0-value-datepicker-popup-0,
+#edit-profile-main-field-next-of-kin-und-0-value{
+ height: 35px;
+border: 1px solid #E4E1E1;
+border-radius: 5px;
+ width: 100%;
+}
+#edit-message{
+border: 1px solid #E4E1E1;
+}
+
+#contact-site-form{
+  background-color: #f0f0f0;
+  padding:10px 40px 20px 40px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  border: 1px solid #B1A05A;
+  //@include zen-grid-item(8, 3);
+  img{
+    @include translate(-84px, -65px);
+    margin-bottom: -89px;
+  }
+  label{
+    color:$c;
+  }
+}
+.password-parent, .confirm-parent, div.form-item div.password-suggestions {
+max-width: 100%;
+}
+
+.toboggan-unified.login #register-form {
+background-color: #f0f0f0;
+padding: 3% 5%;
+margin-top: 5%;
+margin-bottom: 40px;
+border-radius: 10px;
+border: 1px solid #B1A05A;
+label{
+  color:$c;
+}
+input[type=text] {
+height: 35px;
+border: 1px solid #E4E1E1;
+border-radius: 5px;
+ width: 100%;
+}
+.description{
+  color:$d;
+}
+textarea,{
+ border: 1px solid #E4E1E1;
+border-radius: 5px;
+width: 100%;
+}
+fieldset{
+  border-color: #FCF7F7;
+}
+}
+
+
+#user-register-form{
+ background-color: #f0f0f0;
+padding: 3% 5%;
+margin-top: 2%;
+border-radius: 10px;
+margin-bottom: 30px;
+border: 1px solid #B1A05A;
+label{
+  color:$c;
+}
+input[type=password], input[type=tel]{
+height: 35px;
+border: 1px solid #E4E1E1;
+border-radius: 5px;
+ width: 100%;
+}
+#edit-profile-main-field-account-number-und-0-value{
+  height: 35px;
+border: 1px solid #E4E1E1;
+border-radius: 5px;
+ width: 100%;
+}
+.description{
+  color:$d;
+}
+}
+#user-login{
+background-color: #f0f0f0;
+padding: 3% 5%;
+margin-top: 5%;
+border-radius: 10px;
+margin-bottom: 30px;
+border: 1px solid #B1A05A;
+label{
+  color:$c;
+}
+input[type=password] {
+height: 35px;
+border: 1px solid #E4E1E1;
+border-radius: 5px;
+ width: 100%;
+}
+.description{
+  color:$d;
+}
+}
+#user-pass{
+background-color: #f0f0f0;
+padding: 12% 5% 5% 5%;
+margin-top: 5%;
+border-radius: 10px;
+margin-bottom: 30px;
+border: 1px solid #B1A05A;
+label{
+  color:$c;
+}
+.description{
+  color:$d;
+}
+}
+#user-profile-form{
+  .description{
+  color:$d;
+}
+}
+.view-contributions{
+   @include zen-grid-item(10, 2);
+   margin-top: 40px;
+   text-align: center;
+   img{
+     display: none;
+   }
+   h1{
+    text-align: center;
+  }
+  table{
+     width:100%;
+     thead tr th, tfoot td{
+    background-color: $d;
+    color:#f0f0f0;
+    text-align: center;
+  }
+  tfoot td{
+    font-family: 'Droid Sans'; font-weight: 700;
+    border-bottom: none;
+    text-align: center;
+  }
+  tr.even{
+    height: 40px;
+    background-color: #F8F5E4;
+border-bottom: 1px solid #F7F2DF;
+text-align: center;
+&:hover{
+  background-color: #0f0f0f;
+  color:#fff;
+}
+}
+tr.odd{
+   height: 40px;
+   background-color: #EBEBD3;
+    border-bottom: 1px solid #B3941B;
+    text-align: center;
+    &:hover{
+  background-color: #0f0f0f;
+  color:#fff;
+}
+}
+   }
+}
+
+.node-26 {
+  padding: 30px;
+  .field-label {
+display: none;
+}
+.field-forms- {
+background-color: #fff;
+margin: 10px 0 0 0;
+padding: 10px 0 10px 20px;
+ border: 1px solid #E2E1CA;
+a{
+  color:$c;
+   font-family: 'Droid Sans'; font-weight: 700;
+   &:hover{
+     color:$d;
+   }
+}
+}
+}
+.toboggan-unified{
+  @include zen-grid-item(8, 3);
+}
+.teln, .mail_me, .bbm{
+  display: inline-block;
+  text-align: center;
+  padding: 0 23px;
+}
+.panel-pane.pane-block.pane-block-5.pane-block {
+position: relative;
+top: -43px;
+}
+#secondary-menu{
+  background-color: $c;
+  position: relative;
+top: -130px;
+left: -40px;
+    li:nth-child(2) a{
+       padding: 0 8.5px;
+      color:#fff;
+      text-align: center;
+      text-decoration: none;
+      &:hover{
+            color:$d;
+            text-decoration: underline;
+          }
+
+    }
+  li:nth-child(1){
+       border-right:1px solid #f0f0f0;
+       a{
+         padding-left: 15.5px;
+          color:#fff;
+          text-align: center;
+          text-decoration: none;
+          &:hover{
+            color:$d;
+            text-decoration: underline;
+          }
+       }
+  }
+}
+.mollom-captcha-content a{
+    font-family: 'Droid Sans';
+}
+#footer p{
+  color: #f0f0f0;
+text-align: center;
+line-height: 200px;
+font-family: 'Droid Sans';
+font-size: 0.9em;
+}
+
+
+.toolbar {
+   #content h1{
+     @include zen-grid-item(8, 3);
+      font-family: 'Droid Sans'; font-weight: 700;
+      text-align: center;
+      color:$d;
+  }
+.node-type-list{
+  padding:30px;
+  dd{
+    font-family: 'Droid Sans';
+    color:$d;
+    font-size: 0.8em;
+  }
+  dt{
+    a{
+      font-family: 'Droid Sans'; font-weight: 700;
+      color:$c;
+    }
+  }
+ @include zen-grid-item(8, 3);
+  line-height: 2em;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 10px 10px 0 0;
+    border: 1px solid #B1A05A;
+  background-color: #f0f0f0;
+  color:$d;
+}
+}
+.page-user{
+  #edit-contact, #edit-timezone{
+    display: none;
+  }
+}
+
+  .node-cash_deposit-form{
+    input[type=text], input[type=number]{
+      height: 35px;
+border: 1px solid #E4E1E1;
+border-radius: 5px;
+width: 100%;
+    }
+    fieldset{
+      border:1px solid #fff;
+    }
+    label{
+      color:$c;
+    }
+     @include zen-grid-item(8, 3);
+      line-height: 2em;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 10px 10px 0 0;
+    border: 1px solid #B1A05A;
+  background-color: #f0f0f0;
+  color:$d;
+  }
+.page-node-add-simplenews {
+  #content{
+    @include zen-grid-item(10, 2);
+    input[type=text]{
+          height: 35px;
+border: 1px solid #E4E1E1;
+border-radius: 5px;
+width: 100%;
+    }
+  }
+
+}

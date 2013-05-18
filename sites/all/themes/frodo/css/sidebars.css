@@ -1,0 +1,18 @@
+
+/* Liquid layout; standard sidebar placement */
+
+div.region-sidebar-first {
+  width: 200px;
+}
+
+div.region-sidebar-second {
+  width: 200px;
+}
+
+body.sidebar-first #content div.section, body.two-sidebars #content div.section {
+  padding-left: 200px;
+}
+
+body.sidebar-second #content div.section, body.two-sidebars #content div.section {
+  padding-right: 200px;
+}
