@@ -3,12 +3,12 @@
 @import "compass";
 @import "sassy-buttons";
 @import "animate";
+@import "breakpoint";
 
 $zen-gutter-width: 40px;
-
 $zen-column-count: 12;
 
-
+$media1: max-width 768px;
 
 //Color
 $a: #333;
@@ -766,4 +766,18 @@ width: 100%;
     }
   }
 
+}
+
+.field-dlink a{
+  @include sassy-button("matte", 5px, 16px, #6767E5, #3535AD, #333, "inset");
+  width:180px;
+  text-align: center;
+}
+
+.field-label {
+   font-family: 'Droid Sans';
+    margin-bottom: -10px;
+}
+.page-admin-people #content{
+  @include zen-grid-item(10, 2);
 }

@@ -403,7 +403,6 @@ img[alt^=Banner] {
 
 /* line 199, ../sass/fresh.scss */
 .nav_all .sf-menu li {
-  width: 20%;
   text-align: center;
   line-height: 72px;
 }
@@ -771,6 +770,7 @@ ul.primary {
   box-sizing: border-box;
   word-wrap: break-word;
   color: #730900;
+  font-size: em;
 }
 
 /* line 391, ../sass/fresh.scss */
@@ -1340,3 +1340,96 @@ ul.secondary {
   border-radius: 5px;
   width: 100%;
 }
+
+/* line 771, ../sass/fresh.scss */
+.field-dlink a {
+  font-size: 16px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF6767E5', endColorstr='#FF2222C4');
+  background: -webkit-linear-gradient(#6767e5, #3535ad 70%);
+  background: -moz-linear-gradient(#6767e5, #3535ad 70%);
+  background: -o-linear-gradient(#6767e5, #3535ad 70%);
+  background: linear-gradient(#6767e5, #3535ad 70%);
+  -webkit-box-shadow: #a8a8f0 0 1px 0 inset;
+  -moz-box-shadow: #a8a8f0 0 1px 0 inset;
+  box-shadow: #a8a8f0 0 1px 0 inset;
+  border: 1px solid #2f2f99;
+  color: #333333;
+  text-shadow: #7979d6 0 1px 0;
+  width: 180px;
+  text-align: center;
+}
+/* line 15, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.field-dlink a:hover {
+  text-decoration: none;
+}
+/* line 18, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.field-dlink a:hover {
+  background-color: #2f2f99;
+  background: -webkit-linear-gradient(#5151e1 3%, #2f2f99 75%);
+  background: -moz-linear-gradient(#5151e1 3%, #2f2f99 75%);
+  background: -o-linear-gradient(#5151e1 3%, #2f2f99 75%);
+  background: linear-gradient(#5151e1 3%, #2f2f99 75%);
+}
+/* line 21, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.field-dlink a:active {
+  -webkit-box-shadow: #2b2b8e 0 1px 2px inset;
+  -moz-box-shadow: #2b2b8e 0 1px 2px inset;
+  box-shadow: #2b2b8e 0 1px 2px inset;
+}
+/* line 6, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.field-dlink a.disabled, .field-dlink a[disabled] {
+  opacity: 0.6;
+  background: #3535ad;
+  cursor: default;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 73, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.4/stylesheets/_sassy-buttons.sass */
+.field-dlink a::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+
+/* line 777, ../sass/fresh.scss */
+.field-label {
+  font-family: 'Droid Sans';
+  margin-bottom: -10px;
+}
+
+/* line 781, ../sass/fresh.scss */
+.page-admin-people #content {
+  float: left;
+  width: 83.33333%;
+  margin-left: 8.33333%;
+  margin-right: -91.66667%;
+  padding-left: 20px;
+  padding-right: 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+.sf-menu li:nth-child(1) a{
+  width:88px;
+}
+.sf-menu li:nth-child(2) a{
+  width:106px;
+}
+.sf-menu li:nth-child(3) a{
+  width:133px;
+}
+.sf-menu li:nth-child(4) a{
+  width:119px;
+}
+.sf-menu li:nth-child(5) a{
+  width:74px;
+}
+
