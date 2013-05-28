@@ -1,0 +1,100 @@
+@import "zen";
+@import "zen/background";
+@import "compass";
+@import "sassy-buttons";
+@import "animate";
+@import "breakpoint";
+
+$zen-gutter-width: 40px;
+$zen-column-count: 12;
+
+$media1: max-width 768px;
+
+//Color
+$a: #333;
+$b:rgb(115, 9, 0);
+$c:#f26d2e;
+$d:#730900;
+
+//Padding
+$pt:40px;
+
+//Height
+$ht:100px;
+
+//Font Size
+$fs:1.2em;
+
+#mini-panel-content_top .pane-block-1 p {
+  @include breakpoint($media1){
+  font-size: 0.95em;
+  }
+}
+.home_front .panel-col-first .pane-content{
+   @include breakpoint($media1){
+  font-size: 1em;;
+  }
+}
+.home_front .panel-col-last .pane-content{
+   @include breakpoint($media1){
+  font-size: 1em;;
+  }
+}
+#name-and-slogan #site-name a{
+   @include breakpoint($media1){
+  font-size: 0.675em;
+  }
+}
+
+img[alt^=Banner]{
+    @include breakpoint($media1){
+  padding: 20px 0;
+  }
+}
+.tinynav{
+  width: 100%;
+  margin: 26px 0;
+}
+.join {
+  @include breakpoint($media1){
+  border-radius: none;
+    padding: 0;
+  }
+a{
+    @include breakpoint($media1){
+ font-size: 0.69em;
+  }
+}
+}
+.region-header-top #block-block-2{
+ @include breakpoint($media1){
+ padding: 22px 0;
+  }
+}
+.page-node-18 h1{
+  @include breakpoint($media1){
+    font-size:1.2em;
+  }
+}
+
+.node-27 .field-forms- a {
+ @include breakpoint($media1){
+font-size: 0.9em;
+}
+}
+.page-node-27 h1{
+  @include breakpoint($media1){
+    font-size: 1.3em;
+  }
+}
+.contact_form_all .pane-block-3 .cd2 img{
+  @include breakpoint($media1){
+    padding: 0;
+  }
+}
+.contact_form_all #page-title{
+  @include breakpoint($media1){
+    font-size: 1.2em;
+  }
+
+}

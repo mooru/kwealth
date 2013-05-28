@@ -1,0 +1,98 @@
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait){
+#mini-panel-content_top .pane-block-1 p {
+font-size: 1.2em;
+}
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  /* line 33, ../sass/tablet.scss */
+  .home_front .panel-col-first .pane-content {
+    font-size: 1em;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width : 1024px) and (orientation: portrait) {
+  /* line 38, ../sass/tablet.scss */
+  .home_front .panel-col-last .pane-content {
+    font-size: 1em;
+  }
+}
+@media all and (min-width: 768px) and (max-width : 1024px) and (orientation: portrait) {
+  /* line 43, ../sass/tablet.scss */
+  #name-and-slogan #site-name a {
+    font-size: 0.675em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width : 1024px) and (orientation: portrait) {
+  /* line 49, ../sass/tablet.scss */
+  img[alt^=Banner] {
+    padding: 20px 0;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width : 1024px) and (orientation: portrait) {
+  /* line 63, ../sass/tablet.scss */
+  .join a {
+    font-size: 0.69em;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width : 1024px) and (orientation : portrait){
+.tinynav {
+  width: 100%;
+  margin: 26px 0;
+}
+}
+
+@media all and (min-width : 768px) and (orientation: portrait) {
+  /* line 69, ../sass/tablet.scss */
+  .region-header-top #block-block-2 {
+    padding: 22px 0;
+    width: 26.66667%;
+  }
+}
+@media all and (max-width : 768px) and (orientation: portrait) {
+  /* line 69, ../sass/tablet.scss */
+  .join{
+    padding: 0px 33px;
+  }
+}
+
+
+@media all and (min-width: 768px) and (max-width : 1024px) and (orientation: portrait) {
+  /* line 74, ../sass/tablet.scss */
+  .page-node-18 h1 {
+    font-size: 1.2em;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width : 1024px) and (orientation: portrait) {
+  /* line 80, ../sass/tablet.scss */
+  .node-27 .field-forms- a {
+    font-size: 0.9em;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width : 1024px) and (orientation: portrait){
+  /* line 85, ../sass/tablet.scss */
+  .page-node-27 h1 {
+    font-size: 1.3em;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width : 1024px) and (orientation: portrait) {
+  /* line 90, ../sass/tablet.scss */
+  .contact_form_all .pane-block-3 .cd2 img {
+    padding: 0;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width : 1024px) and (orientation: portrait) {
+  /* line 95, ../sass/tablet.scss */
+  .contact_form_all #page-title {
+    font-size: 1.2em;
+  }
+}
