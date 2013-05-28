@@ -118,17 +118,24 @@ function kwealth_menu() {
     'access callback' => TRUE,
     'type' => MENU_LOCAL_TASK,
   );
-   $items['user/%user/forms'] = array(
-    'title' => 'Forms',
+  $items['user/%user/loan/guidelines'] = array(
+    'title' => 'Loan Guidelines',
+    'page callback' => 'node_page_view',
+    'page arguments' => array(node_load(23)),
+    'access callback' => TRUE,
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+  );
+   $items['user/%user/loan/forms'] = array(
+    'title' => 'Loan Forms and Calculator',
     'page callback' => 'node_page_view',
     'page arguments' => array(node_load(26)),
     'access callback' => TRUE,
     'type' => MENU_LOCAL_TASK,
   );
-    $items['user/%user/offers'] = array(
-    'title' => 'Offers',
+    $items['user/%user/loan/guarantor'] = array(
+    'title' => 'Guarantor Guideline',
     'page callback' => 'node_page_view',
-    'page arguments' => array(node_load(27)),
+    'page arguments' => array(node_load(43)),
     'access callback' => TRUE,
     'type' => MENU_LOCAL_TASK,
   );
@@ -139,15 +146,43 @@ function kwealth_menu() {
     'access callback' => TRUE,
     'type' => MENU_LOCAL_TASK,
   );
-    $items['user/%user/summary/guidelines'] = array(
+    $items['user/%user/contribution/guidelines'] = array(
     'title' => 'Guidelines',
+   'page callback' => 'node_page_view',
+    'page arguments' => array(node_load(22)),
+    'access callback' => TRUE,
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+  );
+     $items['user/%user/contribution'] = array(
+    'title' => 'Contributions',
    'page callback' => 'node_page_view',
     'page arguments' => array(node_load(22)),
     'access callback' => TRUE,
     'type' => MENU_LOCAL_TASK,
   );
-  return $items;
+    $items['user/%user/equipment'] = array(
+    'title' => 'Equipment',
+   'page callback' => 'node_page_view',
+    'page arguments' => array(node_load(44)),
+    'access callback' => TRUE,
+    'type' => MENU_LOCAL_TASK,
+  );
+    $items['user/%user/equipment'] = array(
+    'title' => 'Equipment Guidelines',
+   'page callback' => 'node_page_view',
+    'page arguments' => array(node_load(44)),
+    'access callback' => TRUE,
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+  );
+    $items['user/%user/equipment/form'] = array(
+    'title' => 'Asset Finance Form',
+   'page callback' => 'node_page_view',
+    'page arguments' => array(node_load(45)),
+    'access callback' => TRUE,
+    'type' => MENU_LOCAL_TASK,
+  );
 
+  return $items;
 }
 
 function kwealth_menu_alter(&$items) {
@@ -155,3 +190,4 @@ function kwealth_menu_alter(&$items) {
     $items['user/%user/view']['title'] = "Profile";
     $items['user/%user/edit']['title'] = "Change Profile";
 }
+

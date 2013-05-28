@@ -1,14 +1,20 @@
-/**
- * @file
- * RTL companion for the tabs.css file.
- */
-/* line 11, ../sass/tabs-rtl.scss */
-ul.primary li,
-ul.secondary li {
-  float: right;
+@media (max-width: 768px) {
+  /* line 28, ../sass/tablet.scss */
+  #mini-panel-content_top .pane-block-1 p {
+    font-size: 1em;
+  }
 }
 
-/* line 17, ../sass/tabs-rtl.scss */
-ul.primary li {
-  margin: 0.5em 3px 0 0;
+@media (max-width: 768px) {
+  /* line 33, ../sass/tablet.scss */
+  .home_front .panel-col-first .pane-content {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 38, ../sass/tablet.scss */
+  .home_front .panel-col-last .pane-content {
+    font-size: 1em;
+  }
 }
