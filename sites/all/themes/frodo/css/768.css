@@ -1,0 +1,81 @@
+@media only screen and (max-width : 768px){
+#name-and-slogan #site-name a {
+font-size: 0.775em;
+}
+}
+
+@media only screen and (max-width : 768px){
+#mini-panel-content_top .pane-block-1 p {
+font-size: 0.96em;
+}
+}
+
+@media only screen and (max-width : 768px){
+.home_front .panel-col-first .pane-content {
+font-size: 1em;
+}
+}
+@media only screen and (max-width : 768px){
+.home_front .panel-col-last .pane-content {
+font-size: 1em;
+}
+}
+@media only screen and (max-width: 768px)  {
+  /* line 49, ../sass/tablet.scss */
+  img[alt^=Banner] {
+    padding: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 768px){
+.join{
+  padding: 0.3em 0.6em;
+  }
+  }
+
+  @media only screen and (max-width: 768px){
+  .page-node-18 h1{
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 768px){
+#site-name{
+font-size: 1.35em;
+}
+}
+@media only screen and (max-width: 768px){
+.pane-content-top {
+  padding-top: 12px;
+}
+}
+@media only screen and (max-width: 768px){
+.page-node-19 #content h1{
+  font-size: 1.7em;
+}
+}
+@media only screen and (max-width: 768px){
+.page-node-27 h1 {
+  font-size: 1.6em;
+}
+}
+@media only screen and (max-width: 768px){
+.contact_form_all #content .title{
+  font-size: 1.5em;
+}
+}
+@media only screen and (max-width: 768px){
+.contact_form_all .panel-1col{
+  margin-top: 5px;
+}
+}
+@media only screen and (max-width: 768px){
+.toboggan-unified #login-message {
+font-size: 1.6em;
+}
+}
+@media only screen (max-width : 768px){
+.tinynav {
+  width: 100%;
+  margin: 26px 0;
+}
+}
