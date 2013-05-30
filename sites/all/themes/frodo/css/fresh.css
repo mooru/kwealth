@@ -1433,3 +1433,26 @@ ul.secondary {
   width:74px;
 }
 
+#menu-970-1{
+width: 114px;
+}
+#menu-668-1{
+  width:119px;
+}
+#menu-961-1{
+  width:74px;
+}
+
+#menu-712-1 {
+width: 114px;
+height: 50px;
+}
+#menu-924-1 {
+height: 50px;
+}
+.sf-menu.sf-horizontal.sf-shadow ul,
+.sf-menu.sf-vertical.sf-shadow ul,
+.sf-menu.sf-navbar.sf-shadow ul ul {
+margin-top: 20px;
+width: 114px !important;
+}

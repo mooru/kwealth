@@ -35,6 +35,10 @@ base theme  = zen
 ;   NOT include a file with that name with your theme.
 ;
 ; stylesheets[MEDIA][] = FILE
+stylesheets[all and (max-width: 1024px)][] = css/1024.css
+stylesheets[all and (max-width: 768px)][] = css/768.css
+stylesheets[all and (max-width: 480px)][] = css/480.css
+stylesheets[all and (max-width: 320px)][] = css/320.css
 ;
 ; The "FILE" is the name of the stylesheet to add/override/remove.
 ; The "MEDIA" in the first set of brackets is a media type or a media query.
@@ -63,8 +67,8 @@ stylesheets[all][] = css/forms.css
 stylesheets[all][] = css/fields.css
 stylesheets[all][] = css/print.css
 stylesheets[all][] = css/fresh.css
-stylesheets[all][] = css/1024.css
-stylesheets[all][] = css/mobile.css
+;stylesheets[all][] = css/1024.css
+;stylesheets[all][] = css/.css
 ; Built-in conditional stylesheet support has been removed from Zen 7.x-5.x.
 ; Instead, Zen now adds conditional-comment-included classes to the html
 ; element, such as .lt-ie9, .lt-ie8, .lt-ie7. More information on this
