@@ -52,3 +52,23 @@ font-size: 0.6em;
 margin-top: 26px;
 }
 }
+@media only screen and (max-width: 480px){
+#header {
+height: 199px;
+}
+}
+@media only screen and (max-width: 480px){
+.contact_form_all #content .title {
+font-size: 9px;
+margin-top: 25px;
+}
+@media only screen and (max-width: 480px){
+.contact_form_all .pane-block-3 p {
+  font-size: 0.7em;
+}
+}
+.contact_form_all .pane-block-3 p {
+#contact-site-form img{
+display: none;
+}
+}
