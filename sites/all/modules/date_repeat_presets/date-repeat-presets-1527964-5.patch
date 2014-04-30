@@ -1,0 +1,26 @@
+From 8404966e646d616866f8cda4e5b50ef0406fe3b1 Mon Sep 17 00:00:00 2001
+From: Bob Vincent <bobvin@pillars.net>
+Date: Thu, 22 Nov 2012 04:23:32 +0000
+Subject: [PATCH] Issue #1527964 by chaps2, tim.plunkett: rename
+ date_repeat_bundles() to date_repeat_field_bundles().
+
+---
+ date_repeat_presets.module |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/date_repeat_presets.module b/date_repeat_presets.module
+index cb3f124..3d013c4 100644
+--- a/date_repeat_presets.module
++++ b/date_repeat_presets.module
+@@ -37,7 +37,7 @@ function date_repeat_presets_get_field_instances() {
+ 
+   if (!isset($repeat_date_field_instances)) {
+     $repeat_date_field_instances = array();
+-    foreach (date_repeat_bundles() as $entity_type => $bundle) {
++    foreach (date_repeat_field_bundles() as $entity_type => $bundle) {
+       foreach ($bundle as $bundle_name => $fields) {
+         foreach ($fields as $field_name) {
+           $field_instance = field_info_instance($entity_type, $field_name, $bundle_name);
+-- 
+1.7.10.4
+
